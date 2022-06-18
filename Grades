@@ -1,0 +1,54 @@
+def CalcTotal (q1,q2,q3,q4,q5):
+    average= (q1+q2+q3+q4+q5)/5
+    return average
+
+def PrintTitle():
+    print ("GradeAvg")
+    print ("=======\n")
+
+PrintTitle()
+name=input ("Enter user name ==>")
+q1=input ("Enter q1")
+q2=input ("Enter q2")
+q3=input ("Enter q3")
+q4=input ("Enter q4")
+q5=input ("Enter q5")
+
+if (avg>90):
+    return "A"
+if (avg>80):
+    return "B"
+if (avg>70):
+    return "C"
+if (avg>60):
+    return "D"
+if (avg<60):
+    return "F"
+
+print (name+ "your grade is ==> " +str(p))
+
+choice=""
+while(choice!='c'):
+    print("\nMenu of Options")
+    print("==============\n")
+    print("a, Over 90 points")
+    print("b, Over 80 and less than 90")
+    print("c, Over 70 and less than 80")
+    print("d, Over 60 and less than 70")
+    print("f, Less than 60")
+    print("g. QUIT\n\n")
+    choice=input("Enter your choice ==> ")
+    if(choice== 'a'):
+        GradeA()
+    elif(choice== 'b'):
+        GradeB()
+    elif(choice== 'c'):
+        GradeC()
+    elif(choice== 'd'):
+        GradeD()
+    elif(choice== 'f'):
+        GradeF()
+    
+    else:
+        WrongEnter()
+
